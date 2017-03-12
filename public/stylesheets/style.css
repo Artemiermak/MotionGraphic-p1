@@ -1,0 +1,328 @@
+/*<!--  File name: custom css style file*/
+/*Author's name: Artem Iermak*/
+/*web site name: artemwebportfolio.herokuapp.com*/
+/*File description: css custom styles for Artem's portfolio website*/
+/*-->*/
+body {
+  padding: 0px;
+  font: 14px 'Quicksand', "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*background-color: #2A363B;*/
+  /*color: RGB(240,240,240);*/
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*===================================== start  scroll up ========================================*/
+#Go_top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  /*border: 1px solid black;*/
+  border-radius: 50% 50%;
+  background-color: transparent;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  background-color: #E84A5F;
+
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+}
+#Go_top:hover {
+  text-decoration: none;
+  color: #2A363B;
+  transition-duration: 0.5s;
+}
+/*===================================== end of scroll up ========================================*/
+
+
+
+/*==========================================================================================*/
+/*=====================================  NAVIGATION ========================================*/
+/*==========================================================================================*/
+.hamburger {
+  padding: 0;
+  padding-left: 25px !important;
+}
+ul {
+  -webkit-padding-start: 0px;
+}
+
+.sidenav {
+  height: 100%;
+  padding: 0;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2A363B;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+
+
+}
+
+.sidenav a#HomeNav:hover{
+  color: #99B898;
+  padding-bottom: 5px;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.sidenav a#AboutMeNav:hover{
+  color: #FECEA8;
+  text-decoration: overline ;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.sidenav a#ServicesNav:hover{
+  color: RGB(100,100,100);
+  text-decoration: line-through ;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.sidenav a#ProjectsNav:hover{
+  color: #E84A5F;
+  text-decoration: underline ;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.sidenav a#ContactNav:hover{
+  color: #FF847C;
+  text-decoration: underline ;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*==========================================================================================*/
+
+
+/*=====================================  HOME PAGE ========================================*/
+/*==========================================================================================*/
+.HomeButtonsSection {
+  background-color: RGBA(20, 20, 20, 0.2);
+  text-align: center;
+  padding: 80px 0;
+  margin: 0 300px;
+}
+
+.HomeButtonsSection h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+
+  margin-bottom: 70px;
+}
+.HomeButtonsSection a {
+  padding: 10px 30px;
+  margin: 0 50px;
+  font-size: 3rem;
+  background-image: none;
+  border-color: transparent;
+
+  border-radius: 25px;
+  color: #ffffff;
+
+  /*transition-property: border;*/
+  transition-duration: 0.5s;
+}
+
+.HomeButtonsSection a:active {
+  background-color: #99B898;
+  border: 1px solid white;
+}
+.HomeButtonsSection a:hover {
+
+  border: 1px solid white;
+}
+
+
+.green {
+  background-color: #E84A5F;
+}
+.pink {
+  background-color: #99B898;
+}
+.red{
+  background-color: #FF847C;
+}
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\  TOGGLE  /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/*/
+#slider {
+  background: #fafafa;
+  width: 200px;
+  height: 40px;
+  margin: auto auto;
+  margin-top: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+section p {
+  vertical-align: middle;
+  text-align: center;
+  background-color: #e84a5f;
+  color: white;
+  width: 60px;
+  height: 39px;
+  margin: 0;
+
+  line-height: 40px;
+  position: relative;
+  left: 0;
+  border-radius: 25px;
+
+  transition: all 1s;
+}
+/* Add visual style to toggle on/off with JS */
+.on {
+  left: 140px;
+  background-color: #99b898;
+
+}
+.rotate {
+  display: inline-block;
+  animation-name: roll;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+
+  animation-delay: 0.3s;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: play;
+  /*             animation-fill-mode: forwards; */
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*==========================================================================================*/
+
+
+
+/*=====================================  PROJECT PAGE ========================================*/
+/*==========================================================================================*/
+.tilesSection {
+  text-align: center;
+  padding: 40px 0;
+  /*outline: 1px solid green;*/
+}
+.projectTile {
+  width:20%;
+  margin: 2%;
+  display: inline-block;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color=#616161)";/*IE 8*/
+  -moz-box-shadow: 0 3px 4px 2px rgba(97,97,97,0.9);/*FF 3.5+*/
+  -webkit-box-shadow: 0 3px 4px 2px rgba(97,97,97,0.9);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 0 3px 4px 2px rgba(97,97,97,0.9);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#616161); /*IE 5.5-7*/
+}
+.projectTile img {
+  width: 100%;
+  /*border-radius: 20px;*/
+
+}
+.projectTile:hover {
+  /*-ms-filter: grayscale(0.2) blur(1px);*/
+  /*-webkit-filter: grayscale(0.2) blur(1px);*/
+  /*-moz-filter: grayscale(0.2) blur(1px);*/
+  /*-o-filter: grayscale(0.2) blur(1px);*/
+  /*filter: grayscale(0.2) blur(1px);*/
+  border: 1px solid grey;
+}
+
+
+.paralaxSection {
+  /* The image used */
+  background-image: url("../images/hands-up4.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  text-align: center;
+  color: RGB(240,240,240);
+
+  margin: 0px !important;
+  padding: 0px !important;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000)";/*IE 8*/
+  text-shadow: 1px 1px 3px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+.paralaxSection h1 {
+  padding-top: 200px;
+}
+
+.actionBanner {
+  /* The image used */
+  background-image: url("../images/contact.jpg");
+
+  /* Set a specific height */
+  height: 200px;
+
+  text-align: center;
+  margin: 0px !important;
+  padding: 0px !important;
+
+
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+
+.actionBanner a {
+  margin-top: 80px;
+}
+
+
+/*==========================================================================================*/

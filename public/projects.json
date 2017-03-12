@@ -1,0 +1,33 @@
+{
+  "projectName": {
+    "name": "My handmade web site",
+    "name": "Adidas",
+    "name": "Automoblox",
+    "name": "Lviv Chocolate",
+    "name": "HP printers. Promo page example",
+    "name": "Navigation example",
+    "name": "refactoring-infographic example",
+    "name": "Game calculator",
+  },
+  "projectLink": {
+    "link": "http://artemwebdev.azurewebsites.net/",
+    "link": "http://adidas-product-page.azurewebsites.net/",
+    "link": "http://automoblox-artem.azurewebsites.net/index.php",
+    "link": "http://lviv-chocolate.azurewebsites.net/",
+    "link": "http://hp-printers-poster.azurewebsites.net/",
+    "link": "http://navigation-school-task.azurewebsites.net/",
+    "link": "http://refactoring-infographic.azurewebsites.net/",
+    "link": "http://comp2084-gamecalc-artem.azurewebsites.net/"
+  },
+  "projectPhotoPath": {
+    "1": "1.jpg",
+    "2": "2",
+    "3": "2",
+    "4": "node ./bin/www",
+    "5": "node ./bin/www",
+    "6": "node ./bin/www",
+    "7": "node ./bin/www",
+    "8": "node ./bin/www",
+  }
+}
+

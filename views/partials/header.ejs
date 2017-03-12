@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <!--  File name: html.ejs file
+        Author's name: Artem Iermak
+        web site name: artemwebportfolio.herokuapp.com
+        File description: HTML markup using Express.js and Angular2.js for Artem's portfolio website
+  -->
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<head>
+  <title>Artem Iermak portfolio website</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="school assignment, portfolio, Artem Iermak, web developmnet">
+  <meta name="author" content="Artem Iermak" />
+  <!-- Remove Tap Highlight on Windows Phone IE -->
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <!--Quicksand Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <!--Waves js hover-->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/waves.min.css" />
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css">
+
+
+  <!--HomeGallery-->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/homeGalleryStyle.css" />
+
+    <!--Custom CSS style-->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <!--Modernizr js2-->
+  <script type="text/javascript" src="/javascripts/modernizr.custom.86080.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+<body>
+  <header>
+  <!-- =============================================== MAIN NAVIGATION  =============================================== -->
+    <nav id="mySidenav" class="sidenav">
+        <ul id="Nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="HomeNav" href="/">Home</a>
+            <a id="AboutMeNav" href="/aboutme">About me</a>
+            <a id="ServicesNav" href="/services">Services</a>
+            <a id="ProjectsNav" href="/projects">Projects</a>
+            <a id="ContactNav"  href="/contact">Contact</a>
+        </ul>
+        <footer>
+            <small>
+                <a href="mailto:artem.iermak@artemwebdev.com">artem.iermak@artemwebdev.com</a>
+                <a>
+                    &copy; <span id="CurrentYear"></span> | Artem Iermak Web Design & Development.
+                </a>
+            </small>
+        </footer>
+
+    </nav>
+    <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </header>
+  <main>
+<!-- =============================================== BODY =============================================== -->

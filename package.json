@@ -1,0 +1,36 @@
+{
+  "name": "assignment1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "jquery": "^3.1.1",
+    "mailgun-js": "^0.8.1",
+    "morgan": "~1.7.0",
+    "nodemailer": "^3.0.2",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "sendgrid": "^4.7.1",
+    "serve-favicon": "~2.3.2"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artemiermak/comp2106-assignment1.git"
+  },
+  "author": "artem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artemiermak/comp2106-assignment1/issues"
+  },
+  "homepage": "https://github.com/Artemiermak/comp2106-assignment1#readme",
+  "description": ""
+}
